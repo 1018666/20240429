@@ -6,7 +6,7 @@ var span = 5
 function setup() {
   createCanvas(windowWidth, windowHeight);
   capture = createCapture(VIDEO)
-capture.size(640,480);//設定顯示畫面大小
+capture.size(capture_widt,capture_heigh);//設定顯示畫面大小
 captureGraphics = captureGraphics(capture_width,480)
 captureGraphics.translate(capture_width,0)
 captureGraphics.scale(-1,1)
