@@ -1,7 +1,7 @@
 var captureGraphics
 var capture_width = 640
 var capture_height = 480
-var span = 10
+var span = 5
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -23,7 +23,7 @@ function draw() {
     for(var y =0;y<captureGraphics.height;y=y+10){
       var pixel =captureGraphics.get(x,y)
       fill(pixel)
-      rect(x,y,pixel)
+      rect(x,y,span)
 
     }
   }
